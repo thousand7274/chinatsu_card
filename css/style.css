@@ -56,6 +56,9 @@ button:focus { outline:0; }
   transition-property: background-color;
 }
 /* MediaQuery */
+/* ------------------------------------
+  768px対応
+------------------------------------ */
 @media only screen and (min-width: 768px) {
   .container{
     margin: 0 auto;
@@ -63,4 +66,13 @@ button:focus { outline:0; }
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* MediaQuery end */
+
+/* ------------------------------------
+  1024px対応
+------------------------------------ */
+@media screen and (min-width: 1024px){
+.container{
+  grid-template-columns: repeat(4, 1fr);
+  }
+}
+
