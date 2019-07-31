@@ -1,4 +1,7 @@
 @charset "UTF-8";
+*{
+  box-sizing: border-box;
+}
 body{
   color:#333333;
   line-height: 1.7;
@@ -52,3 +55,12 @@ button:focus { outline:0; }
   box-shadow: none;
   transition-property: background-color;
 }
+/* MediaQuery */
+@media only screen and (min-width: 768px) {
+  .container{
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* MediaQuery end */
